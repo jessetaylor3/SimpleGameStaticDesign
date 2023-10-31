@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.phone-frame {
+    width: 375px;
+    height: 812px;
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+    background-color: white;
+    margin: 50px auto;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.phone-content {
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/HomeScreen.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.buttonImage {
+    width: 92px; /* 115 * 0.8 */
+    height: 88px; /* 110 * 0.8 */
+}
+
+.buttonImageSmall {
+    width: 49px; /* 70 * 0.7 */
+    height: 49px; /* 70 * 0.7 */
+    margin-top: 20px;
+}
