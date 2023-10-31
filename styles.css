@@ -38,57 +38,54 @@ body {
     height: 100%;
 }
 
+.titleContainer {
+    position: absolute;
+    top: 10%;  /* Adjust as needed to place the title appropriately */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.titleContainer h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff; /* Adjust color as needed */
+    font-size: 36px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center; 
+    align-items: center;               /* 5% from the right to ensure padding */
+    padding: 5px;
+
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .buttonContainer button {
-    margin-bottom: 40%;
+    margin: 0 30px;
     border: none;
     cursor: pointer;
-    background: none;
+    background: transparent;
     padding: 10px;
     border-radius: 8px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: transform 0.2s ease;
+}
+
+.buttonImageSmall, .buttonImage {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .buttonContainer button:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* Slight dark background on hover */
-    transform: scale(1.05); /* Button enlarges slightly on hover */
+    transform: scale(1.05);
 }
 
 .buttonContainer button:active {
-    background-color: rgba(0, 0, 0, 0.2);
-    transform: scale(1); /* Button goes back to normal size when clicked */
-}
-
-
-.button {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.button:focus {
-    outline: none;
-}
-
-.buttonImageSmall {
-    width: 50px; /* Adjust size as needed */
-    height: auto;
-}
-
-.buttonImage {
-    width: 70px; /* Adjust size as needed */
-    height: auto;
-}
-
-.buttonContainer button:nth-child(1):hover {
-    background-color: rgba(100, 100, 250, 0.2); /* Blue tint for Locker button */
-}
-
-.buttonContainer button:nth-child(2):hover {
-    background-color: rgba(100, 250, 100, 0.2); /* Green tint for Play button */
-}
-
-.buttonContainer button:nth-child(3):hover {
-    background-color: rgba(250, 100, 100, 0.2); /* Red tint for Settings button */
+    transform: scale(0.95);
 }
 
 
@@ -116,13 +113,18 @@ body {
     width: 100%;
     margin: 20px 0;  /* Adds space above and below the icons */
 }
-.lockerRoom-content h1{
-    color: black;
-    font-size: 30px;
-    margin-top: 0px;
+.lockerRoom-content h1 {
+    font-family: 'Orbitron', sans-serif; /* Use the Orbitron font */
+    color: #0a84ff; /* Change the color to a shade of blue */
+    font-size: 36px; /* Increase the font size a bit */
+    margin-top: 0;
     padding-bottom: 350px;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+    letter-spacing: 1.5px; /* Space out the letters a bit */
+    text-transform: uppercase; /* Make the text all uppercase */
 }
+
 .iconWrapper {
     margin: 0 10px;  /* Provides space between icons */
 }
