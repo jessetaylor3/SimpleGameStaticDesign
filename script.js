@@ -13,3 +13,19 @@ function navigateTo(screenName){
             console.error("Unknown screen: " + screenName);
     }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    let iconWrappers = document.querySelectorAll('.iconWrapper');
+    
+    iconWrappers.forEach(function(wrapper) {
+        wrapper.addEventListener('click', function() {
+            // Determine the selected plane's source
+            let planeImageSrc = wrapper.querySelector('.plane-icon').getAttribute('src');
+            let planeName = planeImageSrc.split('/').pop().split('.')[0]; // e.g., "bluePlane"
+            
+            // Redirect to the Game Screen with a query parameter
+            window.location.href = `gameScreen.html?plane=${planeName}`;
+        });
+    });
+});
+

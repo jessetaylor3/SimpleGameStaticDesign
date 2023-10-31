@@ -41,7 +41,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .button {
@@ -100,4 +100,43 @@ body {
     background-image: url('assets/SettingScreen.png');
     background-size: cover;
     background-position: center center;
+}
+
+.iconWrapper {
+    cursor: pointer;
+    border: 5px solid transparent; /* This prevents layout shift when a plane is selected */
+    transition: border-color 0.3s ease; /* Smooth transition of the border */
+}
+
+.iconWrapper.selected {
+    border-color: black;
+}
+.phone-content.gameScreen-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.paperAirplane {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.homeLink:hover {
+    background-color: #555; /* Slightly lighter shade on hover */
+}
+.homeLink {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    text-decoration: none; /* Remove the underline */
+    border-radius: 5px;
+    position: absolute;    /* This will position the link relative to the .gameScreen-content */
+    top: 10px;             /* 10px from the top */
+    left: 10px;            /* 10px from the left */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }

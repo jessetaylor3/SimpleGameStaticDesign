@@ -12,9 +12,20 @@
             <!-- Home link -->
             <a href="index.html" class="homeLink">Home</a>
             <!-- Use the selected icon or default icon if none is selected -->
-            <img src="assetsbluePlane.png" alt="Paper Airplane" class="paperAirplane">
+            <img src="assets/bluePlane.png" alt="Paper Airplane" class="paperAirplane">
+
         </div>
     </div>
-    <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the plane parameter from the URL
+            let urlParams = new URLSearchParams(window.location.search);
+            let planeName = urlParams.get('plane') || 'bluePlane'; // default to bluePlane
+    
+            // Set the plane image
+            document.querySelector('.paperAirplane').setAttribute('src', `assets/${planeName}.png`);
+        });
+    </script>
+    
 </body>
 </html>
