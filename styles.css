@@ -70,3 +70,9 @@ body {
     background-size: cover;
     background-position: center center;
 }
+
+.settingScreen-content {
+    background-image: url('assets/SettingScreen.png');
+    background-size: cover;
+    background-position: center center;
+}
