@@ -99,6 +99,9 @@ body {
 }
 
 .lockerRoom-content {
+    background-image: url('assets/lockerScreenAI.png');
+    background-size: cover;
+    background-position: center center;
     display: flex;
     flex-direction: column;  /* Ensures content inside is stacked vertically */
     align-items: center;     /* Horizontally centers the content */
@@ -113,12 +116,19 @@ body {
     width: 100%;
     margin: 20px 0;  /* Adds space above and below the icons */
 }
-
+.lockerRoom-content h1{
+    color: black;
+    font-size: 30px;
+    margin-top: 0px;
+    padding-bottom: 350px;
+    margin-bottom: 20px;
+}
 .iconWrapper {
     margin: 0 10px;  /* Provides space between icons */
 }
 
 .plane-icon {
+    mix-blend-mode: multiply;
     width: 90px;
     height: 90px;
 }
