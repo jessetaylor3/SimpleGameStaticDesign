@@ -64,3 +64,9 @@ body {
     height: 49px; /* 70 * 0.7 */
     margin-top: 20px;
 }
+
+.gameScreen-content {
+    background-image: url('assets/GameScreen.png');
+    background-size: cover;
+    background-position: center center;
+}
