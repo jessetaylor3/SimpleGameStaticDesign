@@ -70,3 +70,28 @@ body {
     background-size: cover;
     background-position: center center;
 }
+
+.lockerRoom-content {
+    display: flex;
+    flex-direction: column;  /* Ensures content inside is stacked vertically */
+    align-items: center;     /* Horizontally centers the content */
+    justify-content: center; /* Vertically centers the content */
+    height: 100%;
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;  /* Adds space above and below the icons */
+}
+
+.iconWrapper {
+    margin: 0 10px;  /* Provides space between icons */
+}
+
+.plane-icon {
+    width: 90px;
+    height: 90px;
+}
