@@ -116,13 +116,18 @@ body {
     width: 100%;
     margin: 20px 0;  /* Adds space above and below the icons */
 }
-.lockerRoom-content h1{
-    color: black;
-    font-size: 30px;
-    margin-top: 0px;
+.lockerRoom-content h1 {
+    font-family: 'Orbitron', sans-serif; /* Use the Orbitron font */
+    color: #0a84ff; /* Change the color to a shade of blue */
+    font-size: 36px; /* Increase the font size a bit */
+    margin-top: 0;
     padding-bottom: 350px;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+    letter-spacing: 1.5px; /* Space out the letters a bit */
+    text-transform: uppercase; /* Make the text all uppercase */
 }
+
 .iconWrapper {
     margin: 0 10px;  /* Provides space between icons */
 }
