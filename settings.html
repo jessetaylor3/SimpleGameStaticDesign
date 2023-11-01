@@ -5,15 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settings</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <style>
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: space-between;
+        }
 
         .slider-label {
             display: block;
+            font-family: 'Orbitron', sans-serif;
             font-size: 16px;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
+            color: black;
         }
+
         .slider {
-            width: 100%;
+            height: 150px;
+            writing-mode: bt-lr; /* IE */
+            -webkit-appearance: slider-vertical; /* WebKit */
+            width: 12px;
+            margin: 0 20px;
+            color: black;
+            background-color: black;
+        }
+
+        .header {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 24px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .phone-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .sliders-row {
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .slider-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 20px;
         }
 
     </style>
@@ -21,18 +66,19 @@
 <body>
     <div class="phone-frame">
         <div class="phone-content settingScreen-content">
-            <div class="slider-container">
-                <label for="music-volume" class="slider-label">Music Volume</label>
-                <input type="range" id="music-volume" name="music-volume" min="0" max="100" class="slider">
+            <div class="header">Settings</div>
+            <div class="sliders-row">
+                <div class="slider-container">
+                    <label for="music-volume" class="slider-label">Music</label>
+                    <input type="range" id="music-volume" name="music-volume" min="0" max="100" class="slider">
+                </div>
+                <div class="slider-container">
+                    <label for="effects-volume" class="slider-label">Effects</label>
+                    <input type="range" id="effects-volume" name="effects-volume" min="0" max="100" class="slider">
+                </div>
             </div>
-            <div class="slider-container">
-                <label for="effects-volume" class="slider-label">Effects Volume</label>
-                <input type="range" id="effects-volume" name="effects-volume" min="0" max="100" class="slider">
-            </div>
-            
+            <a href="index.html" class="homeLink">Home</a>
         </div>
-        <a href="index.html" class="homeLink">Home</a>
     </div>
 </body>
 </html>
-
