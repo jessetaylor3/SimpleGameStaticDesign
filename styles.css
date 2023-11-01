@@ -90,9 +90,13 @@ body {
 
 
 .gameScreen-content {
-    background-image: url('assets/GameScreen.png');
+    
+    background-image: url('assets/GameScreen.jpg');
     background-size: cover;
     background-position: center center;
+}
+.gameScreen-content img {
+    mix-blend-mode: multiply;
 }
 
 .lockerRoom-content {
@@ -136,7 +140,7 @@ body {
 }
 
 .settingScreen-content {
-    background-image: url('assets/SettingScreen.png');
+    background-color: aquamarine;
     background-size: cover;
     background-position: center center;
 }
