@@ -96,7 +96,7 @@ body {
 }
 
 .lockerRoom-content {
-    background-image: url('assets/lockerScreenAI.png');
+    background-image: url('assets/lockerScreen.jpg');
     background-size: cover;
     background-position: center center;
     display: flex;
